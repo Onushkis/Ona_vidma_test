@@ -15,7 +15,7 @@ a {
   font-weight: bold;
 }
 body {
-  background: no-repeat url(./assets/kort.svg);
+  background: no-repeat url(Assets/kort.svg);
   background-size: cover;
   height: 100vh;
 }
