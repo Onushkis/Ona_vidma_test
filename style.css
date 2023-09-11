@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+body {
+  background-image: url("./assets/kort.svg");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+ max-width: 1920px;
+ height: 100vh;
+}
+.grid > * {
+  color: #fff;
+  /* background-color: pink; */
+  padding: 20px;
+  text-align: center;
+  /* border: 2px solid #fff; */
+  padding: 20px;
+ 
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 300px 300px 300px ;
+  justify-content: center;
+  margin-top: 10em;
+  gap: 40px;
+  align-items: center;
+  /* grid-template:100px 200px/200px auto 150px; */
+}
+
+.grid div:nth-child(1) {
+  grid-row: 1;
+   grid-column: 2/ 3;   
+}
+.grid div:nth-child(2) {
+    grid-row: 2;
+    /* grid-row: auto/ span 2;   */
+  }
+  .grid div:nth-child(3) {
+    grid-row: 2;
+    /* grid-row: auto/ span 2;   */
+  }
+  .grid div:nth-child(4) {
+    grid-row: 2;
+    /* grid-row: auto/ span 2;   */
+  }
+
+  .grid > div:not(:first-child){
+    border: solid 4px green;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+  }
+   /*  .grid > div:not(:first-child):hover{
+        
+    } */
+    .grid > * {
+        cursor: pointer;
+    }
+   
+
+
+/* .grid div:nth-child(2) {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+ */
+/* .grid div:nth-child(5){
+   grid-row: 1/2;
+   grid-column: 1/3;
+} */
+
+/*nav_receip*/
+
+li{
+    list-style-type: none;
+}
+
+/*-----------------Nav*/
+.menu-icon {
+    width: 3rem;
+    height: 1rem;
+    background-color: #ccc; 
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 200;
+  }
+  .line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #bbb;
+    transition: transform 0.3s;
+  }
+  .change .line-1 {
+    transform: rotateZ(45deg) translate(0.7rem, -0.1rem);
+  }
+  .change .line-2 {
+    transform: rotateZ(-45deg) translate(0.7rem, -0.1rem);
+  }
+  .navigation {
+    position: fixed;
+    top: -8rem;
+    right: -63rem;
+    width: 50rem;
+    height: 100vh;
+    background-color: #31363d;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding-left: 8rem;
+    transform: rotateZ(-15deg);
+    transition: all.6s;
+  }
+  
+
+/*  ---------------------------------MOBILE STYLES */
+/* -----------------------ENDS MOBILE STYLES */
+
+@media screen and (min-width:600px){
+  .logo_recepe img {
+    
+    margin-left: -13em;
+}
+}
+
+
